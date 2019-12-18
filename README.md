@@ -12,3 +12,11 @@
 1. `git add .`将修改的文件添加到暂存区
 2. `git commit -m "提交信息"`
 3. `git push`
+
+
+
+## 改造 tabbar 为 router-link
+
+## 设置路由高亮
+
+## 点击 tabbar 中的路由链接，展示对应的路由组件
