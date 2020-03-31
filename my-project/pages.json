@@ -3,7 +3,29 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "uni-app",
+				"navigationBarBackgroundColor":"#007AFF"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationBarBackgroundColor":"#007AFF"
+			}
+		},
+		{
+			"path": "pages/contact/contact",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationBarBackgroundColor":"#007AFF"
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationBarBackgroundColor":"#007AFF"
 			}
 		}
 	],
@@ -12,5 +34,40 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color":"#DD524D",
+		"selectedColor":"#1296db",
+		"backgroundColor":"#F8F8F8",
+		"list": [
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabbar/home.png",
+				"selectedIconPath":"static/tabbar/home-active.png"
+			},
+			{
+				"text":"信息",
+				"pagePath":"pages/message/message",
+				"iconPath":"static/tabbar/message.png",
+				"selectedIconPath":"static/tabbar/message-active.png"
+			},
+			{
+				"text":"我们",
+				"pagePath":"pages/contact/contact",
+				"iconPath":"static/tabbar/user.png",
+				"selectedIconPath":"static/tabbar/user-active.png"
+			}
+		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [
+			{
+				"name":"详情页",
+				"path":"pages/detail/detail",
+				"query":"id=18"
+			}
+		]
 	}
 }
