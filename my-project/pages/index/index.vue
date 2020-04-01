@@ -14,8 +14,15 @@
 				title: 'Hello'
 			}
 		},
-		onLoad() {
-
+		onLoad(options) {
+			console.log(options)
+			console.log('页面加载了')
+		},
+		onPullDownRefresh() {
+			console.log('refresh');
+			setTimeout(function() {
+				uni.stopPullDownRefresh();
+			}, 1000);
 		},
 		methods: {
 

@@ -1,0 +1,1 @@
+<view><view>数据绑定的学习</view><view>{{msg}}</view><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id"><view>{{'序号：'+index+" 姓名："+item.name+" 年龄："+item.age+''}}</view></block><button type="primary" data-event-opts="{{[['tap',[['clickHandle',[20,'$event']]]]]}}" bindtap="__e">确定</button></view>

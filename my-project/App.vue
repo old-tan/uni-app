@@ -13,5 +13,9 @@
 </script>
 
 <style>
+	@import url("./static/fonts/iconfont.css");
 	/*每个页面公共css */
+	.box1 {
+		color: #4CD964;
+	}
 </style>
