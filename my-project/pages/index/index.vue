@@ -1,5 +1,7 @@
 <template>
 	<view class="content">
+		<test v-if="flag"></test>
+		<button type="default" @click="checkTest">切换test组件</button>
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
 			<text class="title">{{title}}</text>
@@ -8,10 +10,12 @@
 </template>
 
 <script>
+	import test from '../../components/test.vue'
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				flag: true
 			}
 		},
 		onLoad(options) {
@@ -25,7 +29,12 @@
 			}, 1000);
 		},
 		methods: {
-
+			checkTest(){
+				this.flag = !this.flag
+			}
+		},
+		components: {
+			test,
 		}
 	}
 </script>
