@@ -1,7 +1,17 @@
 <template>
 	<view class="content">
-		<test v-if="flag"></test>
+		<test v-if="flag" :title="title" @myEvent="getNum"></test>
 		<button type="default" @click="checkTest">切换test组件</button>
+		<view>这是子组件传递过来的数据{{num}}</view>
+		<test-a></test-a>
+		<test-b></test-b>
+		<uni-calendar 
+		    :insert="true"
+		    :lunar="true" 
+		    :start-date="'2019-3-2'"
+		    :end-date="'2019-5-20'"
+		    @change="change">
+		</uni-calendar>
 		<image class="logo" src="/static/logo.png"></image>
 		<view class="text-area">
 			<text class="title">{{title}}</text>
@@ -11,10 +21,14 @@
 
 <script>
 	import test from '../../components/test.vue'
+	import testA from '../../components/a.vue'
+	import testB from '../../components/b.vue'
+	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	export default {
 		data() {
 			return {
 				title: 'Hello',
+				num: 0,
 				flag: true
 			}
 		},
@@ -31,10 +45,20 @@
 		methods: {
 			checkTest(){
 				this.flag = !this.flag
+			},
+			getNum(num){
+				console.log(num)
+				this.num = num
+			},
+			change(e) {
+				console.log('触发了change',e)
 			}
 		},
 		components: {
 			test,
+			"test-a": testA,
+			"test-b": testB,
+			uniCalendar
 		}
 	}
 </script>
