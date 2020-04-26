@@ -8,8 +8,8 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.9.2",
-  "appid": "touristappid",
-  "projectname": "my-project",
+  "appid": "wx97021af26a9f59c2",
+  "projectname": "高丽营新时代文明实践服务平台",
   "condition": {
     "search": {
       "current": -1,
@@ -24,15 +24,8 @@
       "list": []
     },
     "miniprogram": {
-      "current": 0,
-      "list": [
-        {
-          "name": "详情页",
-          "query": "id=18",
-          "id": 0,
-          "pathName": "pages/detail/detail"
-        }
-      ]
+      "current": -1,
+      "list": []
     }
   }
 }

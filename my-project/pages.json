@@ -1,93 +1,81 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationBarBackgroundColor":"#007AFF"
-			}
-		},
-		{
-			"path": "pages/navigator/navigator",
-			"style": {
-				"navigationBarTitleText": "navigator",
-				"navigationBarBackgroundColor":"#007AFF"
-			}
-		},
-		{
-			"path": "pages/message/message",
-			"style": {
-				"navigationBarTitleText": "message",
-				"navigationBarBackgroundColor":"#007AFF"
-			}
-		},
-		{
-			"path":"pages/list/list",
-			"style": {
-				"enablePullDownRefresh": true,
-				"onReachBottomDistance": 200
-			}
-		},
-		{
-			"path":"pages/home/home"
-		},
-		{
-			"path":"pages/uni-style/uni-style"
-		},
-		{
-			"path": "pages/contact/contact",
-			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationBarBackgroundColor":"#007AFF"
-			}
-		},
-		{
-			"path": "pages/detail/detail",
-			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationBarBackgroundColor":"#007AFF"
-			}
+			"path": "pages/index/index"
 		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
+	    ,{
+            "path" : "pages/order/order",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/user/user",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/news/news",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/contact/contact",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/policy/policy",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/practice/practice",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/civilization/civilization",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/join/join",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/swiper/swiper",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navbar/navbar",
+            "style" : {}
+        }
+    ],
 	"tabBar": {
-		"color":"#DD524D",
-		"selectedColor":"#1296db",
-		"backgroundColor":"#F8F8F8",
+		"selectedColor":"#FF4B30",
+		"color":"#ccc",
+		"borderStyle":"black",
+		"iconWidth": "35rpx",
+		"height":"40rpx",
+		"backgroundColor":"#FFFFFF",
 		"list": [
 			{
 				"text":"首页",
 				"pagePath":"pages/index/index",
-				"iconPath":"static/tabbar/home.png",
-				"selectedIconPath":"static/tabbar/home-active.png"
+				"iconPath":"static/icon/home.png", 
+				"selectedIconPath":"static/icon/home-active.png"
 			},
 			{
-				"text":"信息",
-				"pagePath":"pages/message/message",
-				"iconPath":"static/tabbar/message.png",
-				"selectedIconPath":"static/tabbar/message-active.png"
+				"text":"在线点单",
+				"pagePath":"pages/order/order",
+				"iconPath":"static/icon/order.png",
+				"selectedIconPath":"static/icon/order-active.png"
 			},
 			{
-				"text":"我们",
-				"pagePath":"pages/contact/contact",
-				"iconPath":"static/tabbar/user.png",
-				"selectedIconPath":"static/tabbar/user-active.png"
+				"text":"我的",
+				"pagePath":"pages/user/user",
+				"iconPath":"static/icon/user.png",
+				"selectedIconPath":"static/icon/user-active.png"
 			}
 		]
 	},
-	"condition": {
-		"current": 0,
-		"list": [
-			{
-				"name":"详情页",
-				"path":"pages/detail/detail",
-				"query":"id=18"
-			}
-		]
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "高丽营新时代文明实践服务平台",
+		"navigationBarBackgroundColor": "#FF4B30",
+		"backgroundColor": "#F8F8F8"
 	}
 }

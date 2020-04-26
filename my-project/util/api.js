@@ -1,8 +1,9 @@
 
 // const BASE_URL = 'http://localhost:8082'
+// http://yapi.demo.qunar.com/mock/99249
 const BASE_URL = 'http://jsonplaceholder.typicode.com'
 
-export const myRequest = () => {
+export const myRequest = (options) => {
 	return new Promise((resolve,reject) => {
 		uni.request({
 			url:BASE_URL+options.url,

@@ -1,43 +1,46 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/navigator/navigator",
-    "pages/message/message",
-    "pages/list/list",
-    "pages/home/home",
-    "pages/uni-style/uni-style",
+    "pages/order/order",
+    "pages/user/user",
+    "pages/news/news",
     "pages/contact/contact",
-    "pages/detail/detail"
+    "pages/policy/policy",
+    "pages/practice/practice",
+    "pages/civilization/civilization",
+    "pages/join/join",
+    "components/swiper/swiper"
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "高丽营新时代文明实践服务平台",
+    "navigationBarBackgroundColor": "#FF4B30",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
-    "color": "#DD524D",
-    "selectedColor": "#1296db",
-    "backgroundColor": "#F8F8F8",
+    "selectedColor": "#FF4B30",
+    "color": "#ccc",
+    "iconWidth": "35rpx",
+    "height": "40rpx",
     "list": [
       {
         "text": "首页",
         "pagePath": "pages/index/index",
-        "iconPath": "static/tabbar/home.png",
-        "selectedIconPath": "static/tabbar/home-active.png"
+        "iconPath": "static/icon/home.png",
+        "selectedIconPath": "static/icon/home-active.png"
       },
       {
-        "text": "信息",
-        "pagePath": "pages/message/message",
-        "iconPath": "static/tabbar/message.png",
-        "selectedIconPath": "static/tabbar/message-active.png"
+        "text": "在线点单",
+        "pagePath": "pages/order/order",
+        "iconPath": "static/icon/order.png",
+        "selectedIconPath": "static/icon/order-active.png"
       },
       {
-        "text": "我们",
-        "pagePath": "pages/contact/contact",
-        "iconPath": "static/tabbar/user.png",
-        "selectedIconPath": "static/tabbar/user-active.png"
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/icon/user.png",
+        "selectedIconPath": "static/icon/user-active.png"
       }
     ]
   },

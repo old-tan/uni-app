@@ -1,6 +1,6 @@
 {
-    "name" : "my-project",
-    "appid" : "",
+    "name" : "高丽营新时代文明实践服务平台",
+    "appid" : "__UNI__1DE3D23",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx97021af26a9f59c2",
         "setting" : {
             "urlCheck" : false
         },
@@ -71,5 +71,9 @@
     },
     "mp-toutiao" : {
         "usingComponents" : true
+    },
+    "h5" : {
+        "title" : "高丽营新时代文明实践服务平台",
+        "domain" : "https://wx.tianguogong.com"
     }
 }

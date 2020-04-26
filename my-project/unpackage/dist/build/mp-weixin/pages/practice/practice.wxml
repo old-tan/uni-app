@@ -1,0 +1,1 @@
+<view class="practice"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><view class="practice_item"><view class="til">{{item.title}}</view><view class="img"><image src="{{item.src}}"></image></view></view></block></view>
